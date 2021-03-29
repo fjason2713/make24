@@ -1,0 +1,71 @@
+.make24 {
+  background-color: #282c34;
+  height: 100%;
+  font-size: calc(10px + 2vmin);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  .numberCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 300px;
+
+    p.arrow {
+      font-size: 50px;
+      color: white;
+    }
+  }
+
+  button {
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: inherit;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      font-size: 20px;
+    }
+    button {
+      &:hover {
+        color: lightcoral;
+        border: 1px solid lightcoral;
+      }
+    }
+  }
+
+  .solutions {
+    p {
+      font-size: 30px;
+    }
+  }
+
+  h1 {
+    font-size: 60px;
+    color: #fff;
+    margin: 20px;
+  }
+  p {
+    margin: 5px 0;
+  }
+  input {
+    font-size: 60px;
+    background-color: #282c34;
+    outline: none;
+    color: #fff;
+    border: none;
+    width: 60px;
+    text-align: center;
+    font-family: inherit;
+    border-bottom: 3px solid #fff;
+  }
+}

@@ -1,0 +1,19 @@
+.numberCard {
+  width: 160px;
+  height: 222px;
+  border: 1px solid #fff;
+  margin: 0 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-size: 60px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+  }
+}
