@@ -110,7 +110,7 @@ const Make24: React.FunctionComponent<IMake24Props> = (props) => {
           Some shuffling might help
         </button>
         <button
-          style={secondsRemain > 0 ? { opacity: 0.5, pointerEvents: 'none' } : { opacity: 1 }}
+          style={secondsRemain > 25 ? { opacity: 0.5, pointerEvents: 'none' } : { opacity: 1 }}
           className={styles.showSolution}
           onClick={() => toggleShowSolution(!showSolution)}
         >
