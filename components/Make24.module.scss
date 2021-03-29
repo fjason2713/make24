@@ -41,6 +41,11 @@
         border: 1px solid lightcoral;
       }
     }
+
+    button.functionKey {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   .solutions {
@@ -67,5 +72,45 @@
     text-align: center;
     font-family: inherit;
     border-bottom: 3px solid #fff;
+  }
+
+  @media (max-width: 900px) {
+    .numberCards {
+      height: auto;
+      margin: 15px 0;
+
+      .arrow {
+        display: none;
+      }
+    }
+    h1,
+    p,
+    input {
+      font-size: 40px;
+    }
+    button {
+      margin: 5px;
+    }
+
+    .solutions {
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+    }
+
+    p.small {
+      margin: 20px 0;
+      font-size: 20px;
+    }
+
+    .buttons {
+      height: 50px;
+      button.functionKey {
+        width: 30px;
+        height: 30px;
+        margin: 20px;
+      }
+    }
   }
 }

@@ -126,10 +126,10 @@ const Make24: React.FunctionComponent<IMake24Props> = (props) => {
         </button>
       </div>
 
-      <p>Wanna spice up the game?</p>
       <div className={styles.buttons}>
         <button
-          style={{ width: 50, opacity: cardCount > 2 ? 1 : 0.2 }}
+          className={styles.functionKey}
+          style={{ opacity: cardCount > 2 ? 1 : 0.2 }}
           onClick={() => {
             if (cardCount > 2) {
               handleGotoNextQuestion(cardCount - 1);
@@ -140,7 +140,8 @@ const Make24: React.FunctionComponent<IMake24Props> = (props) => {
         </button>
         <p>{cardCount}</p>
         <button
-          style={{ width: 50, opacity: cardCount < 8 ? 1 : 0.2 }}
+          className={styles.functionKey}
+          style={{ opacity: cardCount < 8 ? 1 : 0.2 }}
           onClick={() => {
             if (cardCount < 8) {
               handleGotoNextQuestion(cardCount + 1);
